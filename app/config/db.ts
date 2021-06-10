@@ -10,6 +10,7 @@ export const connection = mysql.createConnection({
   password: dbConfig.PASSWORD,
   database: dbConfig.DB,
   charset: "utf8mb4",
+  port: dbConfig.PORT,
 });
 
 connection.connect((error) => {
